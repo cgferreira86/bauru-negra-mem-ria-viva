@@ -1,0 +1,10 @@
+[
+{"id":"museu-ferroviario","nome":"Museu Ferroviário Regional de Bauru","categoria":"Acervos","endereco":"Rua Primeiro de Agosto, quadra 1, Centro","coords":[-22.3196,-49.0722],"descricao":"Fichas funcionais, fotografias, mapas e documentos ferroviários. A presença de trabalhadores negros nos registros está em investigação.","fonte":"F-002","selo":"Fonte Prefeitura"},
+{"id":"museu-historico","nome":"Museu Histórico Municipal de Bauru","categoria":"Memórias","endereco":"Rua Rio Branco, 316, Centro","coords":[-22.3228,-49.0706],"descricao":"Acervo fotográfico, jornais e objetos sobre a formação da cidade.","fonte":"F-003","selo":"Fonte Prefeitura"},
+{"id":"nuphis","nome":"NUPHIS — UNISAGRADO","categoria":"Acervos","endereco":"Rua Irmã Arminda, 10-50, Jardim Brasil","coords":[-22.3330,-49.0547],"descricao":"Núcleo criado em 1983; preserva periódicos como Auctoridade (1896) e as crônicas de Negro Guerridos.","fonte":"F-001","selo":"Acervo NUPHIS"},
+{"id":"vila-falcao","nome":"Vila Falcão","categoria":"Territórios","endereco":"Bairro Vila Falcão","coords":null,"descricao":"Referência histórica do samba em Bauru; berço da Mocidade da Vila Falcão.","fonte":"F-011","selo":"Em catalogação"},
+{"id":"sambodromo","nome":"Sambódromo Guilberto Carrijo","categoria":"Cultura","endereco":"Endereço a confirmar","coords":null,"descricao":"Espaço dos desfiles de carnaval; inauguração indicada em 1991.","fonte":"F-011","selo":"Em catalogação"},
+{"id":"bela-vista","nome":"Bela Vista","categoria":"Territórios","endereco":"Bairro Bela Vista","coords":null,"descricao":"Bairro citado em pesquisa sobre redes criativas do samba.","fonte":"F-005","selo":"Em catalogação"},
+{"id":"geisel","nome":"Núcleo Geisel","categoria":"Territórios","endereco":"Bairro Núcleo Geisel","coords":null,"descricao":"Bairro citado em pesquisa sobre territórios do samba.","fonte":"F-005","selo":"Em catalogação"},
+{"id":"gerson","nome":"Gerson Rodrigues — Negro Guerridos","categoria":"Pessoas","endereco":"Vínculo biográfico a aprofundar","coords":null,"descricao":"Cronista na imprensa local (1940–1969).","fonte":"F-007","selo":"Em catalogação"}
+]
