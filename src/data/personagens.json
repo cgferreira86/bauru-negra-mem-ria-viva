@@ -1,0 +1,10 @@
+[
+{"id":"p1","nome":"Gerson Rodrigues","sub":"Negro Guerridos","tipo":"Pessoa","periodo":"1940–1969","texto":"Educador e cronista; crônicas assinadas com pseudônimo documentadas em pesquisa acadêmica.","fonte":"F-007","selo":"Em validação documental","glyph":"G"},
+{"id":"p2","nome":"Mocidade da Vila Falcão","sub":"Escola de samba","tipo":"Cultura","periodo":"1976 / 2014","texto":"Fundação citada em 1976 e retomada em 2014, segundo reportagem local.","fonte":"F-011","selo":"Em validação documental","glyph":"M"},
+{"id":"p3","nome":"Conselho Municipal da Comunidade Negra","sub":"Lei nº 5.051/2003","tipo":"Instituição","periodo":"2003","texto":"Órgão de defesa de direitos e enfrentamento da discriminação.","fonte":"F-009","selo":"Fonte Prefeitura","glyph":"C"},
+{"id":"p4","nome":"Prêmio Luísa Mahin","sub":"Reconhecimento","tipo":"Instituição","periodo":"desde 2005","texto":"Homenageia pessoas e entidades da comunidade negra de Bauru.","fonte":"F-010","selo":"Fonte Prefeitura","glyph":"L"},
+{"id":"p5","nome":"Maracatu BatucaAda","sub":"Homenageado em 2021","tipo":"Cultura","periodo":"2021","texto":"Grupo citado entre os homenageados do Prêmio Luísa Mahin.","fonte":"F-010","selo":"Fonte Prefeitura","glyph":"B"},
+{"id":"p6","nome":"Capoeira Axé do Quilombo","sub":"Homenageado em 2021","tipo":"Cultura","periodo":"2021","texto":"Grupo de capoeira reconhecido pelo Conselho.","fonte":"F-010","selo":"Fonte Prefeitura","glyph":"Q"},
+{"id":"p7","nome":"Nos Trilhos do Samba Paulista","sub":"Mapeamento","tipo":"Cultura","periodo":"Contemporâneo","texto":"Mapeia famílias, samba e ferrovia em Bauru.","fonte":"F-005","selo":"Em validação documental","glyph":"T"},
+{"id":"p8","nome":"NUPHIS","sub":"Núcleo de pesquisa","tipo":"Acervo","periodo":"desde 1983","texto":"Guarda periódicos e documentos da história local.","fonte":"F-001","selo":"Acervo NUPHIS","glyph":"N"}
+]
