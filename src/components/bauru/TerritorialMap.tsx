@@ -41,5 +41,5 @@ export default function TerritorialMap({ items, focusId, onSelect }: { items: T[
     if (m && map.current) { map.current.flyTo(m.getLatLng(), 16); m.openPopup(); }
   }, [focusId, items]);
 
-  return <div ref={el} className="h-full w-full grayscale-[0.6] sepia-[0.35]" />;
+  return <div ref={el} className="bn-map h-full w-full" />;
 }

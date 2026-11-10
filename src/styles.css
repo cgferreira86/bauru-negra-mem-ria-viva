@@ -141,3 +141,4 @@
 }
 .bn-pin { width: 22px; height: 22px; background: var(--accent); border: 3px solid var(--foreground); border-radius: 50% 50% 50% 0; transform: rotate(-45deg); }
 .leaflet-container { font-family: var(--font-sans); background: var(--muted); }
+.bn-map .leaflet-tile-pane { filter: grayscale(0.7) sepia(0.35) contrast(1.05); }
