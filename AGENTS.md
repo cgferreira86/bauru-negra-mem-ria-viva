@@ -28,3 +28,4 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+- Site content lives in src/data/*.json (timeline, territorios, personagens, fontes); edit data there, not in components. Map is Leaflet, lazy-loaded client-only because it needs window.
