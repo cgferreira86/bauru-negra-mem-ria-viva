@@ -24,7 +24,7 @@ export function HorizontalTimeline({ items, renderFonte, renderSelo, canLocate, 
   const wrapRef = useRef<HTMLDivElement>(null);
   const markerRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const [pos, setPos] = useState({ left: 0, arrow: 0, width: 0 });
-  const item = items[idx];
+  const item = items[idx] ?? items[0]!;
 
   const select = (i: number, focus = false) => {
     const n = Math.max(0, Math.min(items.length - 1, i));
@@ -59,6 +59,7 @@ export function HorizontalTimeline({ items, renderFonte, renderSelo, canLocate, 
     else if (e.key === "End") { e.preventDefault(); select(items.length - 1, true); }
   };
 
+  if (!item) return null;
   const showImg = item.imagem?.autorizada && item.imagem.url;
 
   return (
