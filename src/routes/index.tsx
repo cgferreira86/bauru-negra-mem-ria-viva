@@ -6,6 +6,7 @@ import timeline from "@/data/timeline.json";
 import territorios from "@/data/territorios.json";
 import personagens from "@/data/personagens.json";
 import fontes from "@/data/fontes.json";
+import { HorizontalTimeline } from "@/components/bauru/HorizontalTimeline";
 import hero from "@/assets/hero-collage.jpg";
 import futuro from "@/assets/futuro-collage.jpg";
 
@@ -41,7 +42,6 @@ function FonteLink({ id }: { id: string }) {
 }
 
 function Index() {
-  const [open, setOpen] = useState<string | null>("t2");
   const [cat, setCat] = useState("Todos");
   const [sel, setSel] = useState<string | null>(null);
   const items = useMemo(() => territorios.filter((t) => cat === "Todos" || t.categoria === cat), [cat]);
@@ -93,32 +93,13 @@ function Index() {
       <section id="tempo" className="mx-auto max-w-6xl px-6 py-24">
         <Kicker n="03">Linha do tempo</Kicker>
         <h2 className="text-5xl font-bold md:text-6xl">Rastros da memória.</h2>
-        <div className="relative mt-12 border-l-2 border-foreground pl-8">
-          {timeline.map((t) => {
-            const isOpen = open === t.id;
-            return (
-              <article key={t.id} className="relative mb-6">
-                <span className={`absolute -left-[43px] top-5 h-5 w-5 rounded-full border-2 border-foreground ${isOpen ? "bg-accent" : "bg-background"}`} />
-                <button onClick={() => setOpen(isOpen ? null : t.id)} className="flex w-full items-start justify-between gap-4 border border-border bg-card/70 p-5 text-left hover:border-accent">
-                  <div className="min-w-0">
-                    <p className="font-serif text-3xl font-bold text-accent">{t.periodo}</p>
-                    <h3 className="text-2xl font-semibold">{t.titulo}</h3>
-                    <p className="mt-1 text-muted-foreground">{t.resumo}</p>
-                  </div>
-                  {isOpen ? <Minus className="mt-2 h-5 w-5 shrink-0" /> : <Plus className="mt-2 h-5 w-5 shrink-0" />}
-                </button>
-                {isOpen && (
-                  <div className="border border-t-0 border-border bg-card p-5">
-                    <p>{t.detalhe}</p>
-                    <div className="mt-3"><Selo>{t.status}</Selo></div>
-                    <div className="mt-3 flex flex-col gap-1">{t.fontes.map((f) => <FonteLink key={f} id={f} />)}</div>
-                    <button onClick={() => verNoTerritorio(t.territorio)} className="mt-4 inline-flex items-center gap-2 rounded bg-accent px-4 py-2 text-xs font-bold tracking-widest text-accent-foreground"><MapPin className="h-4 w-4" /> VER NO TERRITÓRIO</button>
-                  </div>
-                )}
-              </article>
-            );
-          })}
-        </div>
+        <HorizontalTimeline
+          items={timeline}
+          renderFonte={(id) => <FonteLink id={id} />}
+          renderSelo={(st) => <Selo>{st}</Selo>}
+          canLocate={(id) => !!territorios.find((x) => x.id === id)?.coords}
+          onLocate={verNoTerritorio}
+        />
       </section>
 
       {/* 04 Protagonismo */}

@@ -142,3 +142,9 @@
 .bn-pin { width: 22px; height: 22px; background: var(--accent); border: 3px solid var(--foreground); border-radius: 50% 50% 50% 0; transform: rotate(-45deg); }
 .leaflet-container { font-family: var(--font-sans); background: var(--muted); }
 .bn-map .leaflet-tile-pane { filter: grayscale(0.7) sepia(0.35) contrast(1.05); }
+
+.tl-card { animation: tl-in 300ms ease-out both; }
+.tl-expand { transition: grid-template-rows 300ms ease, opacity 250ms ease; }
+.tl-dot { transition: all 250ms ease; }
+@keyframes tl-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .tl-card { animation: none; } .tl-expand, .tl-dot { transition: none; } }
