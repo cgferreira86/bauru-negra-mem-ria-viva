@@ -7,6 +7,7 @@ import territorios from "@/data/territorios.json";
 import personagens from "@/data/personagens.json";
 import fontes from "@/data/fontes.json";
 import { HorizontalTimeline } from "@/components/bauru/HorizontalTimeline";
+import { SankofaWatermark } from "@/components/bauru/SankofaWatermark";
 import hero from "@/assets/hero-collage.jpg";
 import futuro from "@/assets/futuro-collage.jpg";
 
@@ -61,8 +62,10 @@ function Index() {
       </header>
 
       {/* 01 Hero */}
-      <section id="topo" className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-14 lg:grid-cols-[1fr_1.2fr]">
-        <div>
+      <section id="topo" className="relative mx-auto grid overflow-x-clip max-w-7xl items-center gap-10 px-6 py-14 lg:grid-cols-[1fr_1.2fr]">
+        <div className="relative">
+          <SankofaWatermark className="absolute -left-[20%] -top-[18%] -z-0 w-[120%] max-w-none sm:-left-[25%] lg:-left-[35%] lg:-top-[30%] lg:w-[150%]" />
+          <div className="relative">
           <Kicker n="01">Preto em Cinza · Design Afro-Brasileiro</Kicker>
           <h1 className="text-7xl font-bold leading-[0.85] tracking-tight md:text-9xl">BAURU<br />NEGRA</h1>
           <p className="mt-4 font-serif text-3xl italic">Memória, território e futuros possíveis.</p>
@@ -70,6 +73,7 @@ function Index() {
             <p>Nem toda história foi registrada.</p><p>Nem todo registro contou a história inteira.</p><p className="font-bold">Mas toda memória deixa rastros.</p>
           </div>
           <a href="#intro" className="mt-8 inline-flex items-center gap-3 rounded bg-primary px-6 py-3 text-sm font-bold tracking-widest text-primary-foreground hover:bg-accent">EXPLORAR A MEMÓRIA <ArrowRight className="h-4 w-4" /></a>
+          </div>
         </div>
         <figure>
           <img src={hero} width={1280} height={1024} alt="Colagem editorial conceitual: silhuetas, sol laranja e trilhos de trem" className="torn w-full" />
