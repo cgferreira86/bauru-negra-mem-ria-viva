@@ -64,8 +64,8 @@ function Index() {
       {/* 01 Hero */}
       <section id="topo" className="relative mx-auto grid overflow-x-clip max-w-7xl items-center gap-10 px-6 py-14 lg:grid-cols-[1fr_1.2fr]">
         <div className="relative">
-          <SankofaWatermark className="absolute -left-[20%] -top-[18%] -z-0 w-[120%] max-w-none sm:-left-[25%] lg:-left-[35%] lg:-top-[30%] lg:w-[150%]" />
-          <div className="relative">
+          <SankofaWatermark className="absolute left-1/2 top-1/2 z-0 w-[280px] max-w-none -translate-x-1/2 -translate-y-1/2 sm:w-[340px] lg:w-[420px]" />
+          <div className="relative z-10">
           <Kicker n="01">Preto em Cinza · Design Afro-Brasileiro</Kicker>
           <h1 className="text-7xl font-bold leading-[0.85] tracking-tight md:text-9xl">BAURU<br />NEGRA</h1>
           <p className="mt-4 font-serif text-3xl italic">Memória, território e futuros possíveis.</p>
